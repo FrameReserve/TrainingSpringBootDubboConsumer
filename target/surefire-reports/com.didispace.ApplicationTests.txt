@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.didispace.ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.217 sec <<< FAILURE! - in com.didispace.ApplicationTests
+testGetDubboDemoDto(com.didispace.ApplicationTests)  Time elapsed: 0 sec  <<< ERROR!
+com.alibaba.dubbo.rpc.RpcException: Forbid consumer 192.168.2.82 access service com.training.dubbo.service.DubboDemoService from registry 192.168.2.72:2181 use dubbo version 2.5.3, Please check registry access list (whitelist/blacklist).
+	at com.alibaba.dubbo.registry.integration.RegistryDirectory.doList(RegistryDirectory.java:579)
+	at com.alibaba.dubbo.rpc.cluster.directory.AbstractDirectory.list(AbstractDirectory.java:73)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.list(AbstractClusterInvoker.java:260)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:219)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy0.getDubboDemoDto(proxy0.java)
+	at com.didispace.ApplicationTests.testGetDubboDemoDto(ApplicationTests.java:25)
+

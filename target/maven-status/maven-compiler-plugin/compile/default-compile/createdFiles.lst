@@ -1,0 +1,4 @@
+com\didispace\service\ComputeService.class
+com\training\dubbo\service\DubboDemoService.class
+com\didispace\Application.class
+com\training\dubbo\dto\DubboDemoDto.class
